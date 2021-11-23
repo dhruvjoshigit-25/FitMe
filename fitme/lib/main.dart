@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fitme/home.dart';
 
 void main(){
+  runApp(MainHomePage());
   runApp(
     MaterialApp(
       title: "MyApp",
