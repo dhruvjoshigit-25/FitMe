@@ -40,6 +40,18 @@ class NewHomePage extends StatelessWidget {
 
 
               ),
+              Container(
+                padding: const EdgeInsets.all(8),
+
+                width: 150,
+                height: 100,
+                child: Text("FITMe",
+                  style: TextStyle(fontSize: 40,
+                      fontWeight: FontWeight.bold),
+                ),
+
+
+              ),
 
 
             ],
