@@ -1,5 +1,7 @@
+import 'package:fitme/signup.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fitme/home.dart';
 
 void main(){
   runApp(
@@ -101,7 +103,7 @@ class NewHomePage extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {
                     Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => NewHomePage()));
+                        context, MaterialPageRoute(builder: (_) => MainHomePage()));
                   },
                   child: Text(
                     'Login',
@@ -159,7 +161,7 @@ class NewHomePage extends StatelessWidget {
                         child: TextButton(
                           onPressed: () {
                             Navigator.push(
-                                context, MaterialPageRoute(builder: (_) => NewHomePage()));
+                                context, MaterialPageRoute(builder: (_) => SignUp()));
                           },
 
                           child : Text(" Sign Up!",
