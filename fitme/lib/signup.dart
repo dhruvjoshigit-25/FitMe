@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fitme/main.dart';
+
 class SignUp extends StatelessWidget{
   Widget makeInput({label, obsureText = false}) {
     return Column(
@@ -8,7 +9,7 @@ class SignUp extends StatelessWidget{
       children: [
         Text(
           label,
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400, color: Colors.black87),
+          style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.black87),
         ),
         SizedBox(
           height: 5,
@@ -49,7 +50,7 @@ class SignUp extends StatelessWidget{
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 50),
+            SizedBox(height: 30),
             Text(
               'Welcome, User!',
               style: TextStyle(
@@ -57,7 +58,9 @@ class SignUp extends StatelessWidget{
                 fontSize: 50,
               ),
             ),
-            SizedBox(height: 20),
+
+            SizedBox(height: 10),
+
             Text(
               'SIGNUP',
               style: TextStyle(
@@ -65,14 +68,17 @@ class SignUp extends StatelessWidget{
                 fontSize: 23,
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 40),
               child: Column(
                 children: [
+                  makeInput(label: "First Name"),
+                  makeInput(label: "Last Name"),
                   makeInput(label: "Email"),
                   makeInput(label: "Password", obsureText: true),
-                  makeInput(label: "Confirm Pasword", obsureText: true)
+                  makeInput(label: "Confirm Password", obsureText: true)
+
                 ],
               ),
             ),
@@ -92,6 +98,7 @@ class SignUp extends StatelessWidget{
             ),
             SizedBox(
               height: 20,
+
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
